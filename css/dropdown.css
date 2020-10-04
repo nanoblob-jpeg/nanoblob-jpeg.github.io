@@ -1,0 +1,50 @@
+/*Project drop down menu*/
+.dropdown{
+	background-color: rgb(0,0,0,0);
+	padding: 5;
+	margin-top: -2;
+	color: #62808C;
+	font-size:16px;
+	border:none;
+	text-decoration: none;
+	text-transform:uppercase;
+}
+
+.dropdownclass{
+	position:relative;
+	display:inline-block;
+
+}
+
+.dropdown-content{
+	display:none;
+	position:absolute;
+	background-color: rgb(255,255,255,0.7);
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 2;
+}
+
+.dropdown-content a{
+	color: #697268;
+	padding: 12px 16px;
+	text-decoration: none;
+	display:block;
+	font-size:12px;
+}
+
+.dropdownclass:hover .dropdown-content{
+	display: block;
+}
+
+.dropdownclass:hover .dropdown{
+	color: #779CAB;
+	background-color:rgb(0,0,0,0);
+	font-weight:bold;
+	outline: #779CAB 2px solid;
+}
+
+.dropdown-content a:hover{
+	color: #E2E8DD;
+	font-weight:bold;
+	background-color: #697268;
+}

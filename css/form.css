@@ -1,0 +1,57 @@
+/*form*/
+.formContainer{
+	width:80%;
+	margin: auto;
+}
+
+#form{
+	background-color: #B7D1DA;
+	margin: 10 0 0 0;
+	padding: 0 0 10 0;
+	text-align: center;
+	color:#647377;
+}
+
+#formLayout{
+	display: block;
+}
+
+#formLayout label{
+	float: left;
+	
+}
+
+#contactText{
+	width: 80%;
+	height:auto;
+	font-size: 14;
+	border:1px solid #ccc;
+}
+
+#formButton{
+	height: 35px;
+	border:3px solid #819283;
+	padding: 0 38.5% 0 38.5%;
+	background-color:#697268;
+	color:#E2E8DD;
+}
+
+#formButton:hover{
+	border:3px solid rgb(120,120,160,1);
+	background-color:rgb(179,179,204,1);
+	color:#47476b;
+}
+
+@media(max-width: 768px){
+	#contactText{
+		width:100%;
+	}
+
+	.formContainer{
+		width:100%;
+	}
+
+	#formButton{
+		width: 100%;
+	}
+}

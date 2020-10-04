@@ -1,0 +1,82 @@
+/*top text*/
+.top{
+	background-color: #647377;
+	color: #E2E8DD;
+	text-align: center;
+	padding:0;
+}
+
+.top h1{
+	font-size: 38px;
+	padding:0;
+	margin:0;
+}
+
+.top p{
+	font-size: 20px;
+	padding:0;
+}
+
+/*project text*/
+.project{
+	width: 80%;
+	margin: 0 10% 0 10%;
+	background-color: #B7D1DA;
+}
+
+.project p, .project h3{
+	padding: 5;
+	font-size: 24px;
+	width: 60%;
+}
+
+.project h3{
+	font-size: 30px;
+	margin-bottom: -10;
+}
+
+.project li{
+	font-size: 18px;
+	width: 60%;
+}
+
+
+#tetrisText{
+	text-align: center;
+	float: center;
+	padding: 0 10% 0 20%;
+}
+
+/*Media Queries*/
+@media(max-width: 768px){
+	.project{
+		width: 100%;
+		margin:0;
+		padding:0;
+	}
+
+	.project p, .project h3{
+	padding: 5;
+	font-size: 12px;
+	width: 80%;
+	position: center;
+	}
+
+	.project h3{
+		font-size: 16px;
+	}
+
+	.project li{
+		font-size: 12px;
+	}
+
+	.top h1{
+		font-size: 20px;
+		margin: 0 30% 0 30%;
+	}
+
+	.top p{
+		font-size: 16px;
+	}
+}
+

@@ -1,0 +1,74 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<meta name="description" content="Contact me if you have any questions">
+		<meta name="keywords" content="Jerry Li, Jerry Z Li, thefreeformscribe">
+		<meta name="author" content="Jerry Li">
+		<title>Jerry Li | Contact</Title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="./css/style.css">
+	</head>
+	<body>
+		<div id="wrap">
+			<div id="main">
+				<header>
+					<div class="container">
+						<div id="branding">
+							<h1>Jerry Li</h1>
+						</div>
+						<nav>
+							<ul>
+								<li><a href="index.html">Home</a></.li>
+								<li>
+									<div class="dropdownclass">
+										<button class="dropdown">Projects</button>
+										<div class="dropdown-content">
+											<a href="futureProjects.html">Future Projects</a>
+											<a href="currentProjects.html">Current Projects</a>
+											<a href="finishedProjects.html">Finished Projects</a>
+										</div>
+									</div>
+								</.li>
+								<li><a href="about.html">About</a></.li>
+								<li  class="current"><a href="contact.html">Contact</a></.li>
+							</ul>
+						</nav>
+						<nav id="smallNav">
+								<div class="dropdownclass">
+									<button class="dropdown">Menu</button>
+									<div class="dropdown-content">
+										<a href="index.html">Home</a>
+										<a href="futureProjects.html">Future Projects</a>
+										<a href="currentProjects.html">Current Projects</a>
+										<a href="finishedProjects.html">Finished Projects</a>
+										<a href="about.html">About</a>
+										<a href="contact.html">Contact</a>
+									</div>
+								</div>
+						</nav>
+					</div>
+				</header>
+		
+				<section id="form">
+					<h2>Send your message from here or email me at jerry.li1248@gmail.com!</h2>
+					<p> THIS FORM CURRENTLY NOT WORKING AS I HAVE NOT INSTALLED A MAIL SERVER ON MY WEB SERVER</p>
+					<div class="formContainer">
+					<form method="POST" action="contact.php">
+						<div id="formLayout">
+							<textarea rows="1" cols="80%" name="name" id="contactText"placeholder="Name(First and Last)" required="required"></textarea>
+							<textarea rows="1" cols="80%" name="email" id ="contactText" placeholder="Your Email" required="required"></textarea>
+							<textarea rows="1" cols="80%" name="subject" id="contactText" placeholder="Subject Line" required="required"></textarea>
+							<textarea rows="8" cols="80%" name="message" id ="contactText" placeholder="Message" required="required"></textarea>
+							<button type="submit" id="formButton">Submit</button>
+						</div>
+					</form>
+					</div>
+				</section>
+			</div>
+		</div>
+		<footer>
+			<p>Jerry Li 2020;</p>
+		</footer>
+	</body>
+</html>

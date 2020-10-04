@@ -1,0 +1,52 @@
+/*about page*/
+#aboutPage{
+	width: 80%;
+	margin: 0 10% 0 10%;
+	background-color: #B7D1DA;
+	text-align:left;
+}
+
+#aboutPage h2{
+	font-size:32;
+}
+
+#aboutPage p{
+	padding: 5;
+	font-size: 26px;
+	width: 60%;
+}
+
+#aboutPhoto {
+	width: 25%; 
+	height:auto; 
+	float:right; 
+	position: relative; 
+	display: inline; 
+	right:12%;
+	z-index: 0;
+}
+
+/*Media Queries*/
+@media(max-width: 800px){
+	#aboutPhoto {
+		width: 100%;
+		height: auto;
+		right: 0%;
+		position: relative;
+	}
+
+	#aboutPage h2 {
+		margin: 0 40% 0 40%;
+		font-size: 16pz;
+		position: relative;
+	}
+
+	#aboutPage p{
+		padding: 10px;
+		font-size: 14px;
+		width: 80%;
+		margin: 0 10% 0 10%;
+		position: relative;
+	}
+
+}

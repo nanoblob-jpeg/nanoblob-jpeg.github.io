@@ -1,0 +1,161 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<meta name="description" content="A website to know me, Jerry Li, a bit better">
+		<meta name="keywords" content="Jerry Li, theFreeFormScribe, who is">
+		<meta name="author" content="Jerry Li">
+		<title>Jerry Li | Index</Title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="./css/style.css">
+	</head>
+	<body>
+		<div id="wrap">
+			<div id="main">
+				<header>
+					<div class="container">
+						<div id="branding">
+							<h1>Jerry Li</h1>
+						</div>
+						<nav>
+							<ul>
+								<li class="current"><a href="index.html">Home</a></.li>
+								<li>
+									<div class="dropdownclass">
+										<button class="dropdown">Projects</button>
+										<div class="dropdown-content">
+											<a href="futureProjects.html">Future Projects</a>
+											<a href="currentProjects.html">Current Projects</a>
+											<a href="finishedProjects.html">Finished Projects</a>
+										</div>
+									</div>
+								</.li>
+								<li><a href="about.html">About</a></.li>
+								<li><a href="contact.html">Contact</a></.li>
+							</ul>
+						</nav>
+						<nav id="smallNav">
+								<div class="dropdownclass">
+									<button class="dropdown">Menu</button>
+									<div class="dropdown-content">
+										<a href="index.html">Home</a>
+										<a href="futureProjects.html">Future Projects</a>
+										<a href="currentProjects.html">Current Projects</a>
+										<a href="finishedProjects.html">Finished Projects</a>
+										<a href="about.html">About</a>
+										<a href="contact.html">Contact</a>
+									</div>
+								</div>
+						</nav>
+					</div>
+				</header>
+				
+				<section id="website_header">
+					<h1>Welcome to my website!</h1>
+				</section>
+				
+				<section>
+					<div class="text">I first thought of creating this website because I wanted a place to store projects that I have been working on. But now, I see it as a way to document my growth as a software developer and a way to allow people to use my applications to learn, grow, or just have some fun. You can find my finished and future projects and learn about me, all through this site.</div>
+				</section>
+
+				<section>
+					<div id="showcase">
+					<div style="text-align:center">
+						<span class="dot" onclick = "currentSlide(1)"></span>
+						<span class="dot" onclick = "currentSlide(2)"></span>
+						<span class="dot" onclick = "currentSlide(3)"></span>
+						<span class="dot" onclick = "currentSlide(4)"></span>
+						<span class="dot" onclick = "currentSlide(5)"></span>
+					</div>
+						<div class="mySlides fade">
+							<div class="numberText"></div>
+							<div class="photoContainer">
+								<img src="img/sunset.jpg" id="photo">
+							</div>
+						</div>
+						
+						<div class="mySlides fade">
+							<div class="numberText"></div>
+							<div class="photoContainer">
+								<img src="img/snow.jpg" id="photo">
+							</div>
+						</div>
+						
+						<div class="mySlides fade">
+							<div class="numberText"></div>
+							<div class="photoContainer">
+								<img src="img/lightning.png" id="photo">
+							</div>
+						</div>
+						
+						<div class="mySlides fade">
+							<div class="numberText"></div>
+							<div class="photoContainer">
+								<img src="img/canada.jpg" id="photo">
+							</div>
+						</div>
+						
+						<div class="mySlides fade">
+							<div class="numberText"></div>
+							<div class="photoContainer">
+								<img src="img/backpacking.jpg" id="photo">
+							</div>
+						</div>
+					</div>
+					<br>
+				</section>
+		
+				<script>
+				var slideIndex = 0;
+				showSlides();
+
+				function showSlides() {
+					var i;
+					var slides = document.getElementsByClassName("mySlides");
+					for (i = 0; i < slides.length; i++) {
+						slides[i].style.display = "none";
+					}
+					slideIndex++;
+					if (slideIndex > slides.length) {slideIndex = 1}
+					slides[slideIndex-1].style.display = "block";
+					var dots = document.getElementsByClassName("dot");
+					for (i = 0; i < dots.length; i++) {
+						dots[i].className = dots[i].className.replace(" active", "");
+					}
+					dots[slideIndex-1].className += " active";
+					setTimeout(showSlides, 10000); // Change image every 2 seconds
+				}
+				
+				// Next/previous controls
+				function plusSlides(n) {
+					showSlidess(slideIndex += n);
+				}
+
+				// Thumbnail image controls
+				function currentSlide(n) {
+					showSlidess(slideIndex = n);
+				}
+
+				function showSlidess(n) {
+					var i;
+					var slides = document.getElementsByClassName("mySlides");
+					var dots = document.getElementsByClassName("dot");
+					if (n > slides.length) {slideIndex = 1}
+					if (n < 1) {slideIndex = slides.length}
+					for (i = 0; i < slides.length; i++) {
+						slides[i].style.display = "none";
+					}
+					for (i = 0; i < dots.length; i++) {
+						dots[i].className = dots[i].className.replace(" active", "");
+					}
+					slides[slideIndex-1].style.display = "block";
+					dots[slideIndex-1].className += " active";
+				}
+				</script>
+			</div>
+		</div>
+		<footer>
+			<p>Jerry Li 2020;</p>
+		</footer>
+	</body>
+</html>
